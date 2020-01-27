@@ -7,9 +7,17 @@ header {
         height: 100px;
         display:flex;
         align-items: center;
-        ul li {
-            display: inline;
-            padding-right: 60px;
+        ul {
+            
+            li {
+                display: inline;
+                padding-right: 60px;
+                &:last-child {
+                    .uppercase-links();
+                    font-size: 16px;
+                    color: @red;
+                }
+            }
         }
     }
     .header-content {
@@ -31,4 +39,14 @@ header {
 
 .jumbotron {
     background: url(../img/banner-bg.png);
+}
+
+main {
+    article {
+        padding:50px 0;
+    }
+
+    button {
+        .buttons();
+    }
 }
